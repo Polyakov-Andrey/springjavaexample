@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+
+    <persistence-unit name="Clinic" transaction-type="JTA" >
+        <provider>org.hibernate.ejb.HibernatePersistence</provider>
+        <jta-data-source>java:/clinic</jta-data-source>
+        <class>persistence.Anamnesis</class>
+        <class>persistence.Doctor</class>
+        <class>persistence.Patient</class>
+        <class>persistence.Payment</class>
+        <class>persistence.Visit</class>
+        <class>persistence.User</class>
+
+        <properties>
+            <!--<property name="hibernate.connection.url" value="jdbc:oracle:thin:@//127.0.0.1:1521/XE"/>-->
+            <!--<property name="hibernate.connection.driver_class" value="oracle.jdbc.OracleDriver"/>-->
+            <!--<property name="hibernate.connection.username" value="nick_t"/>-->
+            <!--<property name="hibernate.connection.password" value="w@rlock"/>-->
+            <!--<property name="hibernate.archive.autodetection" value="class"/>-->
+            <!--<property name="hibernate.show_sql" value="true"/>-->
+            <!--<property name="hibernate.format_sql" value="true"/>-->
+            <!--<property name="hbm2ddl.auto" value="update"/>-->
+            <!--<property name="hibernate.dialect" value="org.hibernate.dialect.Oracle10gDialect"/>-->
+
+        </properties>
+    </persistence-unit>
+</persistence>
